@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/* 메인 영역 */
+#main {
+  padding: 135px 0 50px 0;
+}
+#main h2 {
+  position: relative;
+  padding-left: 15px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "PBGothic";
+}
+#main h2::before {
+  content: "";
+  width: 8px;
+  height: 31px;
+  background: #023586;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+/* reserve option */
+#main .reserve_box {
+  margin-top: 10px;
+  padding: 30px;
+}
+#main .reserve_box img {
+  width: 40%;
+}
+#main .reserve_box .reserve_info {
+  float: right;
+  width: 60%;
+  padding: 20px 0 30px 100px;
+  box-sizing: border-box;
+}
+#main .reserve_box .reserve_info h3 {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  border-bottom: 5px double #023586;
+}
+#main .reserve_box .reserve_info table {
+  padding-left: 10px;
+  font-size: 16px;
+}
+#main .reserve_box .reserve_info table tr {
+  display: block;
+  margin-bottom: 20px;
+}
+#main .reserve_box .reserve_info table tr th {
+  width: 150px;
+  text-align: left;
+}
+#main .reserve_box .reserve_info table tr td {
+}
+#main .reserve_box .reserve_info table .form_select {
+  width: 400px;
+  color: #666;
+  font-size: 16px;
+  text-indent: 5px;
+}
+#main .reserve_box .reserve_info button.reserve_btn {
+  display: block;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #023586;
+}
+#main .reserve_box .reserve_info button.reserve_btn:hover {
+  background-color: #01255f;
+  transition: all 0.2s;
+}
+/* product info */
+#main .product_info_box {
+  /* background-color: yellow; */
+  padding: 30px;
+}
+#main .product_info_box h4 {
+  padding: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-top: 3px solid #023586;
+  border-bottom: 3px solid #023586;
+}
+#main .product_info_box .product_info {
+}
+#main .product_info_box .product_info .product_name {
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "PBGothic";
+  text-align: center;
+}
+#main .product_info_box .product_info .product_desc {
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+#main .product_info_box .product_info .product_img {
+  display: block;
+  width: 600px;
+  margin: 50px auto;
+}
+#main .product_info_box .product_info h6 {
+  padding-bottom: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  border-bottom: 3px solid #023586;
+}
+#main .product_info_box .product_info .info_text {
+  margin: 15px 0 50px 0;
+  padding: 0 10px;
+  font-size: 18px;
+}
+#main .product_info_box .product_info .more_info {
+}
+#main .product_info_box .product_info .more_info table {
+  font-size: 18px;
+  border: 1px solid #023586;
+  border-collapse: collapse;
+  
+}
+#main .product_info_box .product_info .more_info table tr {
+  height: 40px;
+}
+#main .product_info_box .product_info .more_info table tr th {
+  width: 150px;
+  /* text-align: left; */
+  border-right: 1px solid #023586;
+}
+#main .product_info_box .product_info .more_info table tr td {
+  width: 150px;
+  text-align: center;
+}
+#main .product_info_box .product_info .more_info table tr td.check {
+  color: #023586;
+  font-weight: bold;
+}
+#main .product_info_box .product_info .nutrition_info {
+}
+#main .product_info_box .product_info .nutrition_info table::before{
+  content: '';
+  width: 1px;
+  height: 120px;
+  background: #023586;
+  position: absolute;
+  top: 0;
+  left: 150px;
+}
+#main .product_info_box .product_info .nutrition_info table {
+  font-size: 18px;
+  border: 1px solid #023586;
+  border-collapse: collapse;
+  position: relative;
+}
+#main .product_info_box .product_info .nutrition_info table tr {
+  height: 40px;
+}
+#main .product_info_box .product_info .nutrition_info table tr:first-child{
+  border-bottom: 1px solid #023586;
+}
+#main .product_info_box .product_info .nutrition_info table tr th {
+  width: 150px;
+  /* text-align: left; */
+  /* border-right: 1px solid #023586; */
+}
+#main .product_info_box .product_info .nutrition_info table tr td {
+  width: 150px;
+  text-align: center;
+}
+#main .product_info_box .product_info .allergy_info {
+}

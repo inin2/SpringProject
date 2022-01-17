@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+/* 메인 영역 */
+#main {
+	padding: 135px 0 50px 0;
+}
+
+#main h2 {
+	text-align: center;
+}
+
+#main h2 a {
+	font-size: 36px;
+	font-weight: bold;
+	font-family: "PBGothic";
+}
+/* filter */
+#main .filters {
+	text-align: center;
+	/* margin-top: 20px; */
+	/* padding: 20px 0; */
+	padding: 20px 0 30px 0;
+	position: relative;
+}
+
+#main .filters::before {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #023586;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+}
+
+#main .filters::after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #023586;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+}
+
+#main .filters ul {
+	
+}
+
+#main .filters ul li {
+	position: relative;
+	display: inline-block;
+	padding: 0 25px;
+}
+
+#main .filters ul li::before {
+	content: "";
+	width: 2px;
+	height: 20px;
+	background-color: #ddd;
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+#main .filters ul li:first-child:before {
+	width: 0;
+	height: 0;
+}
+
+#main .filters ul li a {
+	color: #bbb;
+	font-size: 18px;
+}
+
+#main .filters ul li a:hover {
+	color: #023586;
+}
+
+#main .filters ul li.active a {
+	color: #023586;
+}
+/* product list */
+#main .product_list {
+	margin-top: 15px;
+	padding: 0 30px 50px 30px;
+	border-bottom: 2px solid #023586;
+}
+
+#main .product_list ul {
+	display: flex;
+	flex-wrap: wrap;
+	/* box-sizing: border-box; */
+}
+
+#main .product_list ul li {
+	margin-top: 35px;
+	width: 25%;
+	/* flex: 0 1 25%; */
+	padding: 0 13px;
+	box-sizing: border-box;
+}
+
+#main .product_list ul li img {
+	width: 100%;
+}
+
+#main .product_list ul li .product_info {
+	overflow: hidden;
+}
+
+#main .product_list ul li .product_info .name {
+	
+}
+
+#main .product_list ul li .product_info .price {
+	float: right;
+}
+
+#main .product_list ul li .product_info .price strong {
+	
+}
+/* product list hover */
+#main .product_list ul li:hover img {
+	filter: brightness(80%);
+	transition: 0.2s;
+}
+
+/* 모달 영역 */
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 99;
+	display: none;
+}
+
+.modal .modal_content_box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 470px;
+	padding: 15px;
+	background: #fff;
+	/* text-align: center; */
+}
+
+.modal .modal_content {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	/* padding: 100px; */
+	border: 5px double #023586;
+	box-sizing: border-box;
+}
+
+.modal .modal_content .close_btn {
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	width: 35px;
+	line-height: 35px;
+	color: #bbb;
+	font-size: 35px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.modal .modal_content .close_btn:hover {
+	color: #023586;
+	transition: all 0.2s;
+}
+
+.modal .modal_content .modal_left {
+	float: left;
+	width: 50%;
+	height: 100%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.modal .modal_content .modal_left img {
+	width: 300px;
+	height: 300px;
+}
+
+.modal .modal_content .modal_left h3 {
+	text-align: left;
+	padding: 5px 0 5px 27px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.modal .modal_content .modal_left p {
+	padding: 0 28px;
+	text-align: left;
+}
+
+.modal .modal_content .modal_right {
+	/* background: skyblue; */
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 100%;
+	padding: 40px 20px;
+	box-sizing: border-box;
+}
+
+.modal .modal_content .modal_right h6 {
+	padding-bottom: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px solid #111;
+}
+
+.modal .modal_content .modal_right .info_text {
+	padding-top: 3px;
+	margin-bottom: 15px;
+}
+
+.modal .modal_content .modal_right .info_text table {
+	padding: 0 3px;
+}
+
+.modal .modal_content .modal_right .info_text table tr {
+	
+}
+
+.modal .modal_content .modal_right .info_text table tr th {
+	display: inline-block;
+	width: 40px;
+	margin-right: 15px;
+	text-align: left;
+	border-right: 1px solid #bbb;
+}
+
+.modal .modal_content .modal_right .info_text table tr td {
+	width: 80px;
+}
+
+.modal .modal_content .modal_right .info_text table tr td.check {
+	color: #023586;
+	font-weight: bold;
+}
+
+.modal .modal_content .modal_right .info_text p {
+	line-height: 22px;
+}
+
+.modal .modal_content .reserve_btn {
+	position: absolute;
+	bottom: 32px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	display: inline-block;
+	width: 355px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	background: #023586;
+}
+
+.modal .modal_content .reserve_btn:hover {
+	background-color: #01255f;
+	transition: all 0.2s;
+}
+
+.modal .modal_content .modal_right::before {
+	content: "";
+	position: absolute;
+	top: 5%;
+	left: -1px;
+	width: 1px;
+	height: 90%;
+	background: #ddd;
+}
+
+.show_modal {
+	display: block;
+}

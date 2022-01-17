@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mini.mapper.ReserveMapper">
+
+	<!-- 케이크 상세 정보 -->
+	<select id="cakeDetailGet" resultType="com.mini.vo.CakeVO">
+		select * from p_cake where cakeId = #{cakeId}
+	</select>
+
+	<!-- 케이크 예약 -->
+	<insert id="reserveCake">
+		insert into p_reserve(memberId, cakeId, reserveInfo1, reserveInfo2, reserveInfo3, reserveDate, reserveTime)
+		values(#{memberId}, #{cakeId}, #{reserveInfo1}, #{reserveInfo2}, #{reserveInfo3}, #{reserveDate}, #{reserveTime})
+	</insert>
+
+	<!-- 케이크 예약 목록 -->
+	<select id="reserveCakeGet" resultType="com.mini.vo.ReserveVO">
+		select r.reserveId, r.memberId, r.cakeId, r.reserveInfo1, r.reserveInfo2, r.reserveInfo3, r.reserveDate, r.reserveTime, c.cakeName, c.cakeImage
+		from p_reserve r left outer join p_cake c on r.cakeId = c.cakeId
+		where memberId = #{memberId}
+	</select>
+	
+	<!-- 케이크 예약 취소 -->
+	 <delete id="reserveCancle">
+        delete from p_reserve where reserveId = #{reserveId}
+    </delete>
+
+</mapper>

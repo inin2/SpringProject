@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+h2 {
+	padding-bottom: 2vh;
+	font-size: 3vh;
+	font-weight: bold;
+}
+
+.input_wrap {
+	border: 1px solid #bbb;
+	margin-bottom: 1vh;
+	padding: 0 1vw;
+}
+
+input[type="text"] {
+	height: 4vh;
+}
+
+.textareaBox {
+	padding: 0 0 0 1vw;
+}
+
+textarea {
+	width: 100%;
+	height: 46vh;
+	margin: 1vh 0;
+	border: none;
+	resize: none;
+	outline: none
+}
+
+label {
+	position: relative;
+	height: 4vh;
+	margin-right: 0.3vw;
+	padding-right: 1vw;
+	margin-right: 0.3vw;
+}
+
+label::before {
+	content: "";
+	width: 0.2vh;
+	height: 2.7vh;
+	background: #bbb;
+	position: absolute;
+	top: 0.1vh;
+	right: 0;
+}
+
+.btn_wrap {
+	position: absolute;
+	bottom: 6vh;
+	right: 4vh;
+}
+
+.btn_wrap a {
+	cursor: pointer;
+}
+
+.btn_wrap a.modifyBtn {
+	margin-right: 1vw;
+}
+
+.btn_wrap a.deleteBtn {
+	margin-right: 1vw;
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+ 
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/views/common/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+	    <put-attribute name="body" value="" />
+	    <put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+	
+	<definition name="index" extends="baseLayout">
+		<put-attribute name="title" value="PRODUCTS" />
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+	
+	<definition name="member/join" extends="baseLayout">
+		<put-attribute name="title" value="회원가입" />
+		<put-attribute name="body" value="/WEB-INF/views/member/join.jsp" />
+	</definition>
+	
+	<definition name="member/login" extends="baseLayout">
+		<put-attribute name="title" value="로그인" />
+		<put-attribute name="body" value="/WEB-INF/views/member/login.jsp" />
+	</definition>
+	
+<!-- 	<definition name="member/findId" extends="baseLayout"> -->
+<!-- 		<put-attribute name="title" value="아이디 찾기" /> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/views/member/findId.jsp" /> -->
+<!-- 	</definition> -->
+	
+<!-- 	<definition name="member/findIdAfter" extends="baseLayout"> -->
+<!-- 		<put-attribute name="title" value="아이디 찾기" /> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/views/member/findIdAfter.jsp" /> -->
+<!-- 	</definition> -->
+	
+	<definition name="reserve" extends="baseLayout">
+		<put-attribute name="title" value="RESERVE" />
+		<put-attribute name="body" value="/WEB-INF/views/reserve.jsp" />
+	</definition>
+	
+	<definition name="mypage" extends="baseLayout">
+		<put-attribute name="title" value="MYPAGE" />
+		<put-attribute name="body" value="/WEB-INF/views/mypage.jsp" />
+	</definition>
+</tiles-definitions>

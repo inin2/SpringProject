@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.in.mapper.BoardMapper">
+
+	<!-- 게시판 목록 -->
+	<select id="boardList" resultType="com.in.vo.BoardVO">
+		select * from m_board
+	</select>
+
+	<!-- 게시판 등록 -->
+	<insert id="boardEnroll">
+		insert into m_board(title, content, writer)
+		values(#{title}, #{content}, #{writer})
+	</insert>
+
+	<!-- 게시판 조회 -->
+	<select id="boardPage" resultType="com.in.vo.BoardVO">
+		select * from m_board where bno = #{bno}
+	</select>
+
+	<!-- 게시판 수정 -->
+	<update id="boardModify">
+		update m_board set title = #{title}, content = #{content} where bno = #{bno}
+	</update>
+
+	<!-- 게시판 삭제 -->
+	<delete id="boardDelete">
+		delete from m_board where bno = #{bno}
+	</delete>
+	
+	<!-- 조회수 증가 -->
+	<update id="viewsUpdate">
+		update m_board set viewsCnt = viewsCnt + 1 where bno = #{bno}
+	</update>
+
+	<!-- 페이징 -->
+<!-- 	<select id="boardPaging" resultType="com.in.vo.BoardVO"> -->
+<!-- 		select * -->
+<!-- 		from ( -->
+<!-- 		select bno, title, writer, regDate, viewsCnt -->
+<!-- 		from m_board order by bno desc -->
+<!-- 		) as T1 -->
+<!-- 		limit ((${pageNum}-1)*${amount}), ${amount} -->
+<!-- 		limit #{skip}, #{amount} -->
+<!-- 	</select> -->
+
+	<!-- 게시물 총 갯수 -->
+<!-- 	<select id="getTotal" resultType="int"> -->
+<!-- 		select count(*) from m_board -->
+<!-- 	</select> -->
+</mapper>

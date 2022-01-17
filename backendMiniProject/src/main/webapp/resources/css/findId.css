@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+.wrap {
+	height: 100vh;
+	padding: 10vh 10vw;
+	background-color: #f6f6f6;
+}
+
+.find_wrap {
+	padding: 10vh 10vw;
+	border-radius: 30px;
+	background-color: #fff;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 7vh;
+	font-weight: bold;
+	font-family: "PBGothic";
+	text-align: center;
+}
+
+.find_input {
+	margin-top: 6vh;
+}
+
+.find_input table {
+	position: relative;
+	width: 100%;
+	font-size: 3vh;
+	border: 1px solid #bbb;
+	border-collapse: collapse;
+}
+
+.find_input tr {
+	display: inline-block;
+	padding: 3vh 3vw;
+}
+
+.find_input tr th {
+	width: 16vw;
+	height: 7vh;
+	font-weight: normal;
+	text-align: left;
+}
+
+.find_input tr td {
+	height: 7vh;
+}
+
+.find_input tr td input {
+	width: 38vw;
+	font-size: 3vh;
+	cursor: text;
+}
+
+.find_input table::before {
+	content: "";
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 13vh;
+	right: 0px;
+	background-color: #bbb;
+}
+
+button[type="submit"] {
+	width: 100%;
+	height: 11vh;
+	margin-top: 6vh;
+	color: #fff;
+	font-size: 3.5vh;
+	font-weight: bold;
+	background-color: #023586;
+}
+
+button[type="submit"]:hover {
+	background-color: #01255f;
+	transition: all 0.2s;
+}

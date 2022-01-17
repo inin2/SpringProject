@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "PBGothic";
+  font-style: normal;
+  font-weight: 100;
+  src: url(PBGothicOTFRg.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "PBGothic";
+  font-style: bold;
+  font-weight: 700;
+  src: url(PBGothicOTFBd.woff2) format("woff2");
+}

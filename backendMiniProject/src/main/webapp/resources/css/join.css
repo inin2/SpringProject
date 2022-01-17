@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* 회원가입 */
+#join {
+  padding: 135px 0 70px 0;
+  background: #f6f6f6;
+}
+#join h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "PBGothic";
+}
+#join h3 {
+  width: 800px;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 40px 0 0 0;
+  background-color: #023586;
+}
+/* join input */
+#join .join_wrap {
+  width: 800px;
+  margin: 0 auto;
+  padding: 60px 80px 70px 80px;
+  font-size: 16px;
+  background: #fff;
+  box-sizing: border-box;
+}
+#join .join_wrap .input_info {
+  margin-top: 20px;
+}
+#join .join_wrap .input_info dl {
+  overflow: hidden;
+  padding: 15px 30px;
+  line-height: 35px;
+  border: 1px solid #bbb;
+}
+#join .join_wrap .input_info dl dt {
+  float: left;
+  width: 18%;
+}
+#join .join_wrap .input_info dl dt span.ess {
+  display: inline-block;
+  width: 7px;
+  height: 6px;
+  margin-left: 5px;
+  vertical-align: 3px;
+  background: url(../images/icon_ess.png) no-repeat;
+}
+#join .join_wrap .input_info dl dd {
+  position: relative;
+  float: left;
+  width: 82%;
+}
+#join .join_wrap .input_info dl dd input.form_text {
+  width: 400px;
+  font-size: 16px;
+  cursor: text;
+}
+#join .join_wrap .input_info dl dd input.idChk_btn {
+  position: absolute;
+  bottom: 0px;
+  right: -30px;
+  width: 100px;
+  height: 35px;
+  color: #023586;
+  border-left: 2px solid #bbb;
+}
+#join .join_wrap .input_info dl dd {
+  font-size: 14px;
+  color: #023586;
+}
+#join .join_wrap .input_info dl dd span.pw_check {
+  color: #ff4b06;
+  /* animation: blink 0.2s linear 2 alternate; */
+}
+.blink {
+  animation: blink 0.2s linear 2 alternate;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* join button */
+#join .join_wrap .join_btn {
+  height: 70px;
+  margin-top: 23px;
+  text-align: center;
+  background-color: #023586;
+}
+#join .join_wrap .join_btn a {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 70px;
+}
+#join .join_wrap .join_btn:hover {
+  background-color: #01255f;
+  transition: all 0.2s;
+}

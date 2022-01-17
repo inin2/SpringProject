@@ -1,0 +1,36 @@
+/* @charset "UTF-8"; */
+
+h2 {
+	padding-bottom: 2vh;
+	font-size: 3vh;
+}
+
+.input_wrap {
+	border: 1px solid #bbb;
+	margin-bottom: 1vh;
+	padding: 0 1vw;
+}
+
+input[type="text"] {
+	width: 100%;
+	height: 4vh;
+}
+
+textarea {
+	width: 100%;
+	height: 46vh;
+	margin: 1vh 0;
+	border: none;
+	resize: none;
+	outline: none
+}
+
+.btn_wrap {
+	position: absolute;
+	bottom: 6vh;
+	right: 4vh;
+}
+
+.btn_wrap .cancleBtn {
+	margin-right: 1vw;
+}
